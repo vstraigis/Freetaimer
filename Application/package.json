@@ -1,5 +1,5 @@
 {
-  "name": "bachelors-web-application",
+  "name": "web-application",
   "private": true,
   "scripts": {
     "start:client": "./scripts/start-client.sh",
@@ -7,7 +7,8 @@
     "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
     "install:client": "./scripts/install-client.sh",
     "install:server": "./scripts/install-server.sh",
-    "install": "npm run install:server && npm run install:client"
+    "install:root": "./scripts/install-root.sh",
+    "install:all": "npm run install:root && npm run install:server && npm run install:client"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

@@ -13,4 +13,4 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-_echoInfo "Server installed successfully."
+_echoSuccess "Server installed successfully."

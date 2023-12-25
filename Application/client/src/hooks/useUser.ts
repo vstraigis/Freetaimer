@@ -1,12 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchUsers } from '../services/api';
-// import { User } from '../models/user';
-
-interface User {
-    id: number;
-    name: string;
-    email: string;
-  }
+import { User } from '../types/userTypes';
 
 export const useUsers = () => {
   const [users, setUsers] = useState<User[]>([]);

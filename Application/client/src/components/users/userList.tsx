@@ -1,15 +1,7 @@
 import React from 'react';
-//import { User } from '../../models/user';
+import { UserListProps } from '../../types/userTypes';
 
-interface User {
-    id: number;
-    name: string;
-    email: string;
-  }
 
-interface UserListProps {
-  users: User[];
-}
 
 const UserList: React.FC<UserListProps> = ({ users }) => {
   return (

@@ -1,12 +1,10 @@
-import React from 'react';
-import { UserListProps } from '../../types/userTypes';
-
-
+import React from "react";
+import { UserListProps } from "../../types/userTypes";
 
 const UserList: React.FC<UserListProps> = ({ users }) => {
   return (
     <ul>
-      {users.map(user => (
+      {users.map((user) => (
         <li key={user.id}>
           {user.name} - {user.email}
         </li>

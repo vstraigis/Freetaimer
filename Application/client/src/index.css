@@ -1,22 +1,43 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@layer base {
+  :root {
+    --color-one: 9 3 2;
+    --color-two: 122 155 118;
+    --color-three: 138 126 114;
+    --color-four: 90 35 40;
+    --color-five: 200 191 199;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: rgb(var(--color-one));
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+      --color-one: 800 191 199;
+      --color-two: 12 355 418;
+      --color-three: 838 26 114;
+      --color-four: 90 35 40;
+      --color-five: 9 3 2;
+    }
+  } */
+
+  [data-theme='dark'] {
+    --color-one: 800 191 199;
+    --color-two: 12 355 418;
+    --color-three: 838 26 114;
+    --color-four: 90 35 40;
+    --color-five: 9 3 2;
+  }
+  
 }

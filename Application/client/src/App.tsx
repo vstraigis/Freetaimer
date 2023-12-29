@@ -1,27 +1,24 @@
-import { useState } from 'react'
-import './App.css'
-import UsersPage from './views/UsersPage';
+import "./App.css";
+import { Route, Routes, Link } from "react-router-dom";
 
+import LandingPage from "./views/LandingPage";
+import UsersPage from "./views/UsersPage";
+import { Navbar } from "./components/components";
 
-function App() {
-
-  const [greeting, setGreeting] = useState<string>("");
-
-  const getGreeting = async () => {
-    const response = await fetch("api/users");
-    const greeeting = await response.text();
-    console.log(greeeting);
-    setGreeting(greeeting);
-  };
-
+function App(): JSX.Element {
   return (
-    <div>
-      <h1>Greetring</h1>
-      <button onClick={getGreeting}>Get greeting</button>
-      <p>{greeting}</p>
-      <UsersPage />
+    <div className="App">
+      <Navbar />
+      {/* <Link to="/users">
+        <button>Posts</button>
+      </Link> */}
+
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/users" element={<UsersPage />} />
+      </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

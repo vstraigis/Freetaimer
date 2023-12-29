@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const MailSection = () => {
   return (
-    <section className="w-full bg-gray-50 dark:bg-gray-900">
+    <section className="w-full bg-one">
       <div className="container py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px] items-center">
           <div className="flex flex-col justify-center space-y-4 text-center">

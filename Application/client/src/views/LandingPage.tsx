@@ -7,6 +7,7 @@ import {
   AboutTwo,
   FreeTrial,
   Footer,
+  ModeSwitch,
 } from '../components/components';
 
 const LandingPage = () => {
@@ -19,6 +20,7 @@ const LandingPage = () => {
       <AboutTwo />
       <FreeTrial />
       <MailSection />
+      <ModeSwitch />
       <Footer />
     </div>
   );

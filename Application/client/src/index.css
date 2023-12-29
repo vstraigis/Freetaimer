@@ -2,19 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@layer base {
+  :root {
+    --color-one: 9 3 2;
+    --color-two: 122 155 118;
+    --color-three: 138 126 114;
+    --color-four: 90 35 40;
+    --color-five: 200 191 199;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(17 24 39 / 1);
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: rgb(var(--color-one));
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+      --color-one: 800 191 199;
+      --color-two: 12 355 418;
+      --color-three: 838 26 114;
+      --color-four: 90 35 40;
+      --color-five: 9 3 2;
+    }
+  } */
+
+  [data-theme='dark'] {
+    --color-one: 800 191 199;
+    --color-two: 12 355 418;
+    --color-three: 838 26 114;
+    --color-four: 90 35 40;
+    --color-five: 9 3 2;
+  }
+  
 }
-
-

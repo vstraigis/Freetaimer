@@ -8,6 +8,7 @@ import AboutFirst from './LandingPage/AboutFirst';
 import AboutTwo from './LandingPage/AboutTwo';
 import FreeTrial from './LandingPage/FreeTrial';
 import Footer from './LandingPage/Footer';
+import ModeSwitch from './ModeSwitch/ModeSwitch';
 
 
 export {
@@ -21,4 +22,5 @@ export {
     AboutTwo,
     FreeTrial,
     Footer,
+    ModeSwitch
 };
